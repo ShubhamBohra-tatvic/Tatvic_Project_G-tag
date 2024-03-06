@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatvic Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="./img/favicon-new.png" type="image/png">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    nav{
+        background-color: #e3f2fd;
+    }
+    li{
+        padding-right: 10px;
+    }
+    
+    
+      
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .formbold-main-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 48px;
+        padding-bottom: 68px;
+        /* border: #07074D; */
+        /* border: 2px solid black; */
+      }
+    
+      .formbold-form-wrapper {
+        margin: 0 auto;
+        max-width: 550px;
+        width: 100%;
+        background: white;
+      }
+    
+      .formbold-input-flex {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 22px;
+      }
+      .formbold-input-flex > div {
+        width: 50%;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .formbold-textarea {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    
+      .formbold-form-input {
+        width: 100%;
+        padding-bottom: 10px;
+        border: none;
+        border-bottom: 1px solid #DDE3EC;
+        background: #FFFFFF;
+        font-weight: 500;
+        font-size: 16px;
+        color: #07074D;
+        outline: none;
+        resize: none;
+      }
+      .formbold-form-input::placeholder {
+        color: #536387;
+      }
+      .formbold-form-input:focus {
+        border-color: #6A64F1;
+      }
+      .formbold-form-label {
+        color: #07074D;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        display: block;
+        margin-bottom: 18px;
+      }
+      .formbold-form-input:focus + .formbold-form-label {
+        color: #6A64F1;
+      }
+    
+      .formbold-input-file {
+        margin-top: 30px;
+      }
+      .formbold-input-file input[type="file"] {
+        position: absolute;
+        top: 6px;
+        left: 0;
+        z-index: -1;
+      }
+      .formbold-input-file .formbold-input-label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+      }
+    
+      .formbold-filename-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-bottom: 22px;
+      }
+      .formbold-filename {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+        line-height: 24px;
+        color: #536387;
+      }
+      .formbold-filename svg {
+        cursor: pointer;
+      }
+    
+      .formbold-btn {
+        font-size: 16px;
+        border-radius: 5px;
+        padding: 12px 25px;
+        border: none;
+        font-weight: 500;
+        background-color: #6A64F1;
+        color: white;
+        cursor: pointer;
+        margin-top: 25px;
+      }
+      .formbold-btn:hover {
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+      }
+    
+</style>
+
+<body>
+    <header>
+    <!-- //Navbar -->
+
+
+    <nav class="navbar navbar-expand-lg border-bottom border-body ">
+        <!-- <nav class="navbar navbar-expand-sm bg-dark border-bottom border-body" data-bs-theme="dark"> -->
+
+        <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img width="100px" src="./img/logo.png" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link "  href="./task1.html">Task1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./task2.html">Task2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./task3.html">Task3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="./task4.html">Task4</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./task5.html">Task5</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./task6.html">Task6</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./sublime/index.html">E-Commerce</a>
+                </li>
+            </ul>
+        
+        <!-- <form class="d-flex pl-2" role="search" >
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- <br> -->
+    <main>
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel"> 
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <!-- <iframe src="https://youtu.be/MNwStxet2-c?si=-8S_oOdeLEmvpMWF" frameborder="0" allowfullscreen="true" ></iframe> -->
+                <iframe src="https://www.youtube.com/embed/MNwStxet2-c" title="Tatvic" class="d-block w-100" height="540px"  allowfullscreen="true" ></iframe>
+                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+              </div>
+              <div class="carousel-item " data-bs-interval="3000">
+                <iframe src="https://www.youtube.com/embed/6OWZlW81q1I" title="Tatvic" class="d-block w-100" height="540px"  allowfullscreen="true" ></iframe>
+                <!-- <img src="https://www.youtube.com/embed/6OWZlW81q1I" class="d-block " height="540px" alt="..."> -->
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                  <iframe src="https://www.youtube.com/embed/4tx6nZJXAFs" title="Tatvic" class="d-block w-100" height="540px"  allowfullscreen="true" ></iframe>
+                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!-- form -->
+          <div class="formbold-main-wrapper ">
+            <!-- Author: FormBold Team -->
+            <!-- Learn More: https://formbold.com -->
+            <div class="formbold-form-wrapper " style="border: 2px solid rgba(227, 242, 253, 1); padding: 60px;">
+              <!-- <form  action="https://formbold.com/s/FORM_ID" method="POST"> -->
+                <form action="#">
+                  <div class="formbold-input-flex">
+                    <div>
+                        <input
+                        type="text"
+                        name="firstname"
+                        id="firstname"
+                        placeholder="Shubham"
+                        class="formbold-form-input"
+                        />
+                        <label for="firstname" class="formbold-form-label"> First name </label>
+                    </div>
+                    <div>
+                        <input
+                        type="text"
+                        name="lastname"
+                        id="lastname"
+                        placeholder="Bohra"
+                        class="formbold-form-input"
+                        />
+                        <label for="lastname" class="formbold-form-label"> Last name </label>
+                    </div>
+                  </div>
+          
+                  <div class="formbold-input-flex">
+                    <div>
+                        <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="shubham.bohra@tatvic.com"
+                        class="formbold-form-input"
+                        />
+                        <label for="email" class="formbold-form-label"> Mail </label>
+                    </div>
+                    <div>
+                        <input
+                        type="text"
+                        name="phone"
+                        id="phone"
+                        placeholder="+91-9876543210"
+                        class="formbold-form-input"
+                        />
+                        <label for="phone" class="formbold-form-label"> Phone </label>
+                    </div>
+                  </div>
+          
+                  <div class="formbold-textarea">
+                      <textarea
+                          rows="6"
+                          name="message"
+                          id="message"
+                          placeholder="Write your message..."
+                          class="formbold-form-input"
+                      ></textarea>
+                      <label for="message" class="formbold-form-label"> Message </label>
+                  </div>
+          
+                  
+          
+                  <button class="formbold-btn ">
+                      Send Message
+                  </button>
+              </form>
+            </div>
+          </div>
+          </div>
+          
+
+            
+
+    </main>
+    <!-- <br> -->
+    <!-- <hr> -->
+
+    <!-- <footer > -->
+    <footer class="fixed-bottom">
+        <hr>
+        <div class="d-flex justify-content-around">
+            <p>Developer: Shubham Bohra</p>
+            <p> Tatvic Analytics &copy; 2024</p>
+            <p>
+                <a href="https://www.linkedin.com/in/shubham-bohra-17ba94201/" style="text-decoration: none;" target="_blank">
+
+                    <img  src="./img/linkedin (1).png" width="25px" height="25px" class="mx-2"  alt="">
+                </a>
+                <img src="./img/github.png" width="28px" height="28px" class="mx-2" alt="">
+                <img src="./img/youtube.png" width="28px" height="28px" class="mx-2"  alt="">
+            </p>
+            <!-- <p>
+            </p> -->
+            <!-- <div class="d-flex" id="navbarNav" >
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link "  href="#">Task1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Task2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Task3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Task4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Task5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Task6</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">E-Commerce</a>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</body>
+</html>
