@@ -519,13 +519,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 <script>
 	document.querySelectorAll(".product").forEach(function(e, index){
+		gtag('config', 'G-86E40EHM4N');
 	e.addEventListener("click", function(event){
 	   // alert(`clicked ${index+1}`)
 		var elem= event.target;
 		var ind= index+1;
   
 		   localStorage.setItem("click_product_no", ind);
-  gtag('config', 'G-86E40EHM4N');
 
 
 						gtag("event", "view_item", {
