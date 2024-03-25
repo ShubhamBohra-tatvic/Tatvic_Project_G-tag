@@ -418,40 +418,40 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	  e.addEventListener("click", function(event){
 		
 		  var ind=localStorage.getItem("click_product_no");
-					window.dataLayer = window.dataLayer || [];
-					window.dataLayer.push({
-						event: 'purchase',
-						ecommerce: {
-						  currency: 'EUR',
+
+		  gtag("event", "purchase", {
+							debug_parameter: 'purchase',
+							currency: 'EUR',
 						  value: 116.47,
 						  tax: 7.18,
 						  shipping: 10.00,
 						  affiliation: 'My Parka Store',
 						  transaction_id: 'p115-20202000',
 						  coupon: 'free_back_rub',
-							items: [{
-								item_name: 'IPhone_' + ind,
-								item_id: 'ab222_' + ind,
-								price: '$670_' + ind,
-								item_brand: 'Apple_' + ind,
-								item_category: 'Mobile_' + ind,                         
-								index: ind,
-								quantity: '1_' + ind,
-								affiliation: "Google Merchandise Store_" + ind,
-								coupon: "SUMMER_FUN_" + ind,
-								discount: 2.22,                                                                         
-								item_category2: "phone_1_" + ind,
-								item_category3: "phone_2_" + ind,
-								item_category4: "phone_3_" + ind,
-								item_category5: "phone_4_" + ind,
-								item_list_id: "related_products_" + ind,
-								item_list_name: "Related Products_" + ind,
-								item_variant: "green_" + ind,
-								location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo_" + ind,
-					
-							}]
-						}
-					})
+						  items: [{
+							  item_name: 'IPhone_' + ind,
+							  item_id: 'ab222_' + ind,
+							  price: '$670_' + ind,
+							  item_brand: 'Apple_' + ind,
+							  item_category: 'Mobile_' + ind,                         
+							  index: ind,
+							  quantity: '1_' + ind,
+							  affiliation: "Google Merchandise Store_" + ind,
+							  coupon: "SUMMER_FUN_" + ind,
+							  discount: 2.22,                                                                         
+							  item_category2: "phone_1_" + ind,
+							  item_category3: "phone_2_" + ind,
+							  item_category4: "phone_3_" + ind,
+							  item_category5: "phone_4_" + ind,
+							  item_list_id: "related_products_" + ind,
+							  item_list_name: "Related Products_" + ind,
+							  item_variant: "green_" + ind,
+							  location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo_" + ind,
+				  
+						  }]
+					  }
+				  )
+
 	
 	  })
 	})

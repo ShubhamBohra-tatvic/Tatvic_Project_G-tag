@@ -405,10 +405,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="js/product.js"></script>
 <script>
 	var ind = localStorage.getItem("click_product_no");
-				  window.dataLayer = window.dataLayer || [];
-				  window.dataLayer.push({
-					  event: 'view_item',
-					  ecommerce: {
+				gtag("event", "view_item", {
+							debug_parameter: 'view_item',
 						  items: [{
 							  item_name: 'IPhone_' + ind,
 							  item_id: 'ab222_' + ind,
@@ -431,41 +429,39 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				  
 						  }]
 					  }
-				  })
+				  )
   </script>
   <script>
 	document.querySelectorAll(".cart_button").forEach(function(e, index){
 	  e.addEventListener("click", function(event){
 		
 		  var ind=localStorage.getItem("click_product_no");
-					window.dataLayer = window.dataLayer || [];
-					window.dataLayer.push({
-						event: 'add_to_cart',
-						ecommerce: {
-							items: [{
-								item_name: 'IPhone_' + ind,
-								item_id: 'ab222_' + ind,
-								price: '$670_' + ind,
-								item_brand: 'Apple_' + ind,
-								item_category: 'Mobile_' + ind,                         
-								index: ind,
-								quantity: '1_' + ind,
-								affiliation: "Google Merchandise Store_" + ind,
-								coupon: "SUMMER_FUN_" + ind,
-								discount: 2.22,                                                                         
-								item_category2: "phone_1_" + ind,
-								item_category3: "phone_2_" + ind,
-								item_category4: "phone_3_" + ind,
-								item_category5: "phone_4_" + ind,
-								item_list_id: "related_products_" + ind,
-								item_list_name: "Related Products_" + ind,
-								item_variant: "green_" + ind,
-								location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo_" + ind,
-					
-							}]
-						}
-					})
-	
+
+		  gtag("event", "add_to_cart", {
+							debug_parameter: 'add_to_cart',
+						  items: [{
+							  item_name: 'IPhone_' + ind,
+							  item_id: 'ab222_' + ind,
+							  price: '$670_' + ind,
+							  item_brand: 'Apple_' + ind,
+							  item_category: 'Mobile_' + ind,                         
+							  index: ind,
+							  quantity: '1_' + ind,
+							  affiliation: "Google Merchandise Store_" + ind,
+							  coupon: "SUMMER_FUN_" + ind,
+							  discount: 2.22,                                                                         
+							  item_category2: "phone_1_" + ind,
+							  item_category3: "phone_2_" + ind,
+							  item_category4: "phone_3_" + ind,
+							  item_category5: "phone_4_" + ind,
+							  item_list_id: "related_products_" + ind,
+							  item_list_name: "Related Products_" + ind,
+							  item_variant: "green_" + ind,
+							  location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo_" + ind,
+				  
+						  }]
+					  }
+				  )
 	  })
 	})
 	  </script>
